@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<style>
+ h1{
+    color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(33, 31, 31);
+    font-style: italic;
+  }
+  input {
+  width: 70%;
+  padding: 8px 1px;
+  margin: 2px 0;
+  box-sizing: border-box;
+}
+.box button{
+    width: 50%;
+  padding: 5px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+/*.img{
+   background-image: url(b2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}*/
+.LOGO{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(12, 12, 12);
+    color: aliceblue;
+    padding: 20px 20px;
+    font-style: italic;
+
+}
+ .nav{
+   
+    display: flex;
+    gap: 2rem;
+   
+   
+ }
+.nav a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 4s ease;
+
+    
+}
+.nav a:hover{
+    color: azure;
+}
+.nav-button button:hover{
+    background-color: rgb(207, 18, 18);
+    padding: 10px 20px;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+
+    
+
+}
+.box{
+    border: solid brown;
+    background-color: antiquewhite;
+    height: 190px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    float: inline-end;
+    margin-top: 100px;
+    position: absolute;
+    
+
+           
+            
+           
+}
+.container{
+    
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 00px;
+    
+    
+    
+   
+}
+.card{
+    width: 325px;
+    background-color:#A9BA9D;
+    margin: 10px;
+    transition: transform 0.10s ease, background-color 0.10s ease ;
+    border: solid;
+    
+    
+    
+
+}
+.card img{
+    width: 100%;
+    max-height: 290px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.content a{
+    text-decoration: none;
+    display: inline;
+    background-color: #FFDB58;
+    color: beige;
+    margin-bottom: 10px;
+    padding: 1px 20px;
+    
+}
+.card:hover{
+    transform: translateY(-15px);
+    background-color: rgb(75, 75, 75);
+}
+.content{
+    padding: 10px;
+    color: cornsilk;
+}
+.bg img{
+    height: 600px;
+    width: 2000px;
+}
+.img{
+   
+    position: absolute;
+            
+            top: 170px;
+            left: 100px;
+            padding: 10px;
+            height: 150px;
+            width: 150px;
+}
+/*.card-1{
+    width: 355px;
+background-color: #A9BA9D;
+margin: 10px;
+transition: transform 0.10s ease, background-color 0.10s ease ;
+margin-left: 350px;
+border: solid;
+margin-top: 10px;
+
+}*/
+.card-1{
+    
+}
+.about h4{
+font-size: 100px;
+font-style: italic;
+text-align: center;
+margin: 30px;
+padding: 30px;
+}
+.about{
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+}
+.info h2{
+   text-align: center;
+   font-size: 60px;
+   margin: 30px;
+   padding: 30px;
+   font-style: italic;
+}
+.info p{
+    text-align: center;
+    font-size:20px;
+    padding: 30px;
+}
+.email img{
+  height: 500px;
+  width: 800px;
+  align-items: center;
+  padding: 30px;
+  margin-left: 300px;
+}
+.email{
+    display: flex;
+    
+}
+footer{
+    background-color: rgb(245, 237, 227);
+}
+.foot{
+    display: flex;
+    gap: 100px;
+    margin-left: 80px;
+    font-size: 20px;
+    height: 300px;
+    margin-top: 90px;
+    padding: 20px;
+    
+}
+.foot a{
+    text-decoration: none;
+    color: black;
+}
+.foot a:hover{
+    color: red;
+}
+form h3{
+    padding: 0px;
+}
+form p{
+    padding: 20px;
+}
+form button{
+    background-color: black;
+    color: aliceblue;
+    height: 40px;
+    width: 80px;
+}
+</style>
+<body>
+    <nav>
+    
+        
+        <div class="LOGO"><h2>A&V</h2>
+        <div class="nav">
+        <a href="home.html">home</a>
+        <a href="store.html">store</a>
+        <a href="about">about</a>
+        <a href="contact">contact</a>
+    </div>
+       <!-- <div class="nav-button">
+        <button>login</button>
+        <button>sign up</button>-->
+    
+</div>
+</div>
+</nav>
+<h1> "Everyday Elegance, Timeless Style"</h1>
+<main class="bg">
+    
+    <img src="b2.jpg" alt="b2">
+    
+    
+</main>
+<div class="img">
+    <img src="bg1.png" alt="img">
+   
+</div>
+
+<div class="info">
+    <h2>While picking jewelry for work, remember....</h2>
+    <p>Coordinating your jewelry with your "outfit of the day" well in advance pays off. Not all the striking jewelry pieces in your collection elevate every ensemble in your wardrobe. Plan the right ones together.
+
+        A lustrous silver-hued necklace, a magnificent but dainty pendant, and a pair of regal studs complement casual business attire much better than the rest; keep them aside for Fridays. Formal corporate garb like pantsuits, pencil skirts, and button-down shirts can be styled with chunkier bangles, hoop earrings, tiered rings, or layered necklaces in metallic shades of yellow and rose gold. Statement pieces infuse you with gallops of confidence and enthrall the onlooker to concede to your disposition. Save them for the special days at work.</p>
+</div>
+
+
+    
+
+<!--<section>
+    <form class="position">
+      <div class="box">
+      <input type="text" id ="email_id" name = "abc@gamil.com" placeholder="email_id">
+      <br>
+      <br>
+      <input type="Type your message here..." id ="Type your message here..."  placeholder=" Type your message here...">
+      <br>
+      <br>
+      <button>submit</button>
+      </form>
+    </section>-->
+    <div class="container">
+    <div class="card">
+    <img src="img.jpg" alt="img">
+    <div class="content">
+        <h2>One can never go wrong with a necklace….</h2>
+        <br>
+        <p>A winner in every right, a necklace has a timeless appeal that will never go out of style. We scoured through our enormous collection and picked these captivating necklaces to accompany you through the workweek. Slip in a gold medallion pendant featuring a starburst of 0.09ct diamonds glowing at its core to highlight your look. Open the week in an ivory shirt paired with coffee-colored bottoms and this statement pendant.</p>
+        <!--<a href="load more">load more</a>-->
+
+    </div>
+    </div>
+    <div class="card">
+        <img src="ring.png" alt="img">
+        <div class="content">
+            <h2>Rings to display your leadership and style….</h2>
+            <br>
+            <p>Our luxurious statement rings are perfect for indulging yourself after burning the midnight oil for months; just the kind of pampering your pretty fingers deserve. Whether they tip-toe the keyboard or are occupied behind mountains of files, reward your fingers extravagantly before signing on the dream deals. Whether you pick the 14K yellow gold ring flaunting a chain-link, securing a diamond station in the midpoint, or settle for the bewitching white gold bypass ring bejeweled with sparkling diamonds – you will draw all eyes to you.</p>
+            <!--<a href="load more">load more</a>-->
+    
+    
+        </div>
+
+</div>
+<div class="card">
+    <img src="br.png" alt="img">
+    <div class="content">
+        <h2>Gold bangles for the lady who is hands on….</h2>
+        <br>
+        <p>A stunning bracelet is a one-man-army in the jewelry universe. Apart from stringing the outfit together, it empowers the entire look, which is paramount in the highly-competitive professional setup. A contemporary but boisterous gold bracelet comes to your rescue when preparing for a special presentation, a crucial client meeting, or a facing new challenge at work. A luxurious bangle with beaded panels on both sides, the 14K Yellow Gold Cuff Bracelet dotted with diamond clusters and spiking gold pyramid connectors tops our list of work-appropriate stunners. The elaborate detailing of its designs will undoubtedly elevate your style quotient; you may, however, risk having your audience's attention distracted by the charismatic charm around your cuff.</p>
+        <!--<a href="load more">load more</a>-->
+
+
+    </div>
+</div>
+</div>
+</div>
+<div class="about">
+    <h4>About Us</h4>
+    <p>Their story begins in Lebanon often called the Pearl of the Middle East, where Jack and Dominick were born into a family of master jewelers inheriting their craft from their father, Elias Gabriel. Their early experiences in their father’s workshop laid the groundwork for their future in jewelry design, where they were deeply influenced by Lebanon’s rich heritage and their own commitment to excellence. Their passion for the art form became the foundation of their life’s work.
+
+        After relocating to the United States in 1983 amid civil unrest, the family established a new home and business. By 1987, the brothers were integral in their father’s jewelry store, each bringing their unique strengths— Dominick’s creative flair and with Jack’s engineering precision—elevating every piece beyond conventional standards.</p>
+</div>
+<!--
+<div class="email">
+    <div class="email-c">
+   
+    
+    
+    <img src="footer.png" alt="f">
+</div>
+</div>-->
+<footer>
+    <div class="foot">
+    <ul>
+      <h5>Shop
+    </h5> 
+           <li> <a href="">Mens Wedding Bands</a></li>
+           <li> <a href=""> Anniversary Rings</a></li>
+           <li> <a href="">Fine Jewelry</a></li>
+           <li> <a href="">Current Promotions</a></li>
+    </ul>
+    <ul>
+        <h5>Our Compny</h5>
+
+           <li> <a href="">home</a></li>
+           <li> <a href=""> store</a></li>
+           <li> <a href="">about</a></li>
+           <li> <a href="">contact</a></li>
+    </ul>
+    
+    <form>
+        <h3>BECOME AN INSIDER</h3>
+    <p>Be first to get access to design trends, promotions and exclusive offers.</p>
+        <input type="text" id ="email_id" name = "abc@gamil.com" placeholder="email_id">
+        <button>subscribe</button>
+    </form>
+</div>
+</footer>
+ 
+</body>
+</html>
