@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vayve Mobility Eva</title>
+    <link rel="stylesheet" href="./selected.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Auto Empire</h1>
+      </div>
+      <div class="car-container">
+        <img
+          src="assets/images/Scorpioimage.jpg"
+          alt="Vayve Mobility Eva"
+          class="car-image"
+        />
+        <div class="car-info">
+          <h1>Scorpio Classic</h1>
+          <p>
+            The Mahindra Scorpio has 1 Diesel Engine on offer. The Diesel engine
+            is 2184 cc . It is available with Manual transmission.Depending upon
+            the variant and fuel type the Scorpio has a mileage of 14.44 kmpl.
+            The Scorpio is a 7 seater 4 cylinder car and has length of 4456 mm,
+            width of 1820 mm and a wheelbase of 2680 mm..
+          </p>
+          <p>
+            <strong>₹ 3.25 - 4.49 Lakh*</strong>
+            <a href="#" style="color: blue">Get On-Road Price</a>
+          </p>
+          <p>
+            <small
+              >*Ex-showroom Price in
+              <a href="#" style="color: blue">Pune</a></small
+            >
+          </p>
+          <a href="#" class="btn">Check Schedule For Test Drive</a>
+        </div>
+      </div>
+
+      <!-- Features Container -->
+      <div class="features-container">
+        <div class="tabs">
+          <div class="tab active" onclick="showTab('specifications')">
+            Key Specifications
+          </div>
+          <div class="tab" onclick="showTab('top-features')">Top Features</div>
+          <div class="tab" onclick="showTab('stand-out-features')">
+            Stand Out Features
+          </div>
+        </div>
+
+        <div id="specifications" class="content active">
+          <div class="specs">
+            <div class="spec-box">Mileage: 12-20</div>
+            <div class="spec-box">Height : 1820 mm</div>
+            <div class="spec-box">Weight : 3</div>
+            <div class="spec-box">Engine: 16 - 20.11 bhp</div>
+            <div class="spec-box">Torque: 16 - 20.11 bhp</div>
+            <div class="spec-box">Drive Type: Four Wheel Drive</div>
+            <div class="spec-box">Ground Clearance: 16 - 20.11 bhp</div>
+            <div class="spec-box">Seating Capacity: 7</div>
+          </div>
+        </div>
+
+        <div id="top-features" class="content">
+          <div class="features">
+            <div class="feature-box">Height Adjustable Driver Seat</div>
+            <div class="feature-box">Cruise Control</div>
+            <div class="feature-box">360 Degree Camera</div>
+            <div class="feature-box">Rear AC Vents</div>
+            <div class="feature-box">Advanced Internet Features</div>
+            <div class="feature-box">Air Purifier</div>
+          </div>
+        </div>
+
+        <div id="stand-out-features" class="content">
+          <div class="features">
+            <div class="feature-box">10.25” Digital Driver’s Display</div>
+            <div class="feature-box">360° Camera</div>
+            <div class="feature-box">Front Seat Ventilation</div>
+            <div class="feature-box">Steering Adjustment</div>
+            <div class="feature-box">Forward Collision Warning (FCW)</div>
+            <div class="feature-box">Blind Spot Detection</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showTab(tabId) {
+        document
+          .querySelectorAll(".content")
+          .forEach((content) => content.classList.remove("active"));
+        document
+          .querySelectorAll(".tab")
+          .forEach((tab) => tab.classList.remove("active"));
+        document.getElementById(tabId).classList.add("active");
+        document
+          .querySelector(`.tab[onclick="showTab('${tabId}')"]`)
+          .classList.add("active");
+      }
+    </script>
+  </body>
+</html>

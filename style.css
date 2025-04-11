@@ -20,36 +20,55 @@
     text-decoration: none;
     color: black;
 }
-h2{
+/* h2{
     margin-left: 100px;
     padding: 40px;
     font-size: 70px;
+} */
+section {
+    justify-items: center;
+    padding: 40px;
+    font-size: 30px;
+    padding: 90px;
+    margin: 90px;
+    font-style: italic;
+    /* background-color:black;
+    color: azure; */
+    border-radius: 10px;
 }
-.project img{
+section :hover{
+    
+}
+/* .project img{
     margin-left: 100px;
     border-radius: 10px;
     height: 500px;
 }
 .project{
-   /* display: flex;*/
+   display: flex;
    display: flex;
 }
 .p-1 {
     
     font-style: italic;
     font-size: 20px;
-padding: 20px;   
+padding: 30px;
+margin: 30px;
+gap:30px   
 }
 .project h4{
     font-style: italic;
     font-size: 50px;
-    margin-left: 250px;
-    padding: 30px;
+    margin-left: 100px;
+   padding: 10px;
 }
 .hotel img{
      margin-left: 700px;
     border-radius: 10px;
     height: 500px;
+}
+.hotel{
+    display: flex;
 }
 .hotel-1 p{
     height: 40px;
@@ -65,10 +84,33 @@ padding: 20px;
     font-size: 30px;
 }
 .hotel-1{
- display: grid;
- justify-items:flex-start;
- font-style: italic;
-    font-size: 20px;
-    
-    padding: 0px;
+    height: 40px;
+    width: 380px;
+    margin-right: 100px;
+  
+    font-size: 25px;
 }
+.cars{
+    display: flex;
+}
+.cars h5{
+    font-style: italic;
+    font-size: 50px;
+    margin-left: 250px;
+    padding: 30px; 
+}
+.cars-1 {
+    font-style: italic;
+    font-size: 20px;
+padding: 20px;
+margin: 0px;
+gap:20px
+   
+}
+.cars img{
+   width:600px ;
+   height: 400px;
+   margin: 20px;
+   padding: 20px;
+  border-radius: 10px;
+} */

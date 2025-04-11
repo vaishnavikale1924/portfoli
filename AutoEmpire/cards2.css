@@ -1,0 +1,162 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+  /*===== Colores =====*/
+  --first-color: #db2d2e;
+  --white-color: #e9eaec;
+  --dark-color: #000;
+  --dark-color-lighten: #151515;
+  /*===== Fuente y tipografia =====*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+}
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+.main-container {
+  background-color: var(--dark-color-lighten);
+  /* height: 600px; */
+  padding: 20px 0;
+}
+.main-container .title {
+  font-weight: bold;
+}
+
+/* .card-container p {
+  margin-top: 20px;
+} */
+
+.card-container a {
+  text-decoration: none;
+}
+
+.card-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-container .title {
+  text-align: center;
+  font-size: 40px;
+  color: var(--white-color);
+}
+
+/*===== CARD =====*/
+.card-container {
+  width: 90%;
+  margin: 100px 5%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.card-container .card {
+  width: 320px;
+  height: 400px;
+  background-color: var(--dark-color);
+  border-radius: 1rem;
+  padding: 4rem 2rem 0;
+  color: var(--white-color);
+  overflow-y: hidden;
+  margin-left: 10px;
+}
+
+.card-container .card__img {
+  position: absolute;
+  width: 230px;
+  filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+}
+
+.card-container .card__data {
+  transform: translateY(13.2rem);
+  text-align: center;
+}
+
+.card-container .card__title {
+  font-size: var(--h1-font-size);
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.card-container .card__preci {
+  display: inline-block;
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.card-container .card__description {
+  font-size: var(--small-font-size);
+  text-align: initial;
+  margin-bottom: 1.25rem;
+  opacity: 0;
+}
+
+.card-container .card__button {
+  display: block;
+  width: max-content;
+  padding: 1.125rem 2rem;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.card-container .card__button:hover {
+  box-shadow: 0 18px 40px -12px rgba(242, 162, 12, 0.35);
+}
+
+.card-container .card__img,
+.card-container .card__data,
+.card-container .card__title,
+.card-container .card__preci,
+.card-container .card__description {
+  transition: 0.5s;
+}
+
+/* Hover card effect */
+.card-container .card:hover .card__img {
+  transform: translate(-2rem, -9.5rem);
+  width: 330px;
+  /*  rotate(-20deg) */
+}
+
+.card-container .card:hover .card__data {
+  transform: translateY(4.8rem);
+}
+
+.card-container .card:hover .card__title {
+  transform: translateX(-2.3rem);
+  margin-bottom: 0;
+}
+
+.card-container .card:hover .card__preci {
+  transform: translateX(-2.2rem);
+}
+
+.card-container .card:hover .card__description,
+.card-container .card:hover .card__button {
+  transition-delay: 0.2s;
+  opacity: 1;
+}

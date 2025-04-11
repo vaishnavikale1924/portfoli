@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About AutoEmpire</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @font-face {
+      font-family: "Angelos";
+      src: url("./assets/fonts/Angelos.ttf");
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #ffffff;
+    }
+
+    .about-section {
+      padding: 10px;
+      height: 100vh;
+      text-align: center;
+      background-image: url("./assets/images/premium_photo-1686730540270-93f2c33351b6.avif");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(1, 1, 1, 0.3);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      border-radius: 50px;
+      padding: 10px 30px;
+    }
+
+    .navbar .logo {
+      font-size: 2rem;
+      font-family: "Angelos";
+    }
+
+    /* $$$ */
+    body:before {
+      content: "";
+      position: absolute;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    nav {
+      position: relative;
+    }
+
+    nav ul {
+      margin: 0;
+      padding-left: 11rem;
+      list-style: none;
+      display: flex;
+      gap: 4rem;
+    }
+
+    nav ul li a {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #fff;
+      transition: color 0.25s;
+      text-decoration: none;
+    }
+
+
+
+    nav ul li:hover a {
+      color: #807e8c;
+    }
+
+    nav .active-element {
+      --active-element-scale-x: 1;
+      --active-element-scale-y: 1;
+      --active-element-show: 0;
+      --active-element-opacity: 0;
+      --active-element-width: 0px;
+      --active-element-strike-x: 0%;
+      --active-element-mask-position: 0%;
+      position: absolute;
+      left: 0;
+      top: 34px;
+      height: 3px;
+      width: 36px;
+      border-radius: 2px;
+      background-color: #fff;
+      opacity: var(--active-element-show);
+    }
+
+    nav .active-element>svg,
+    nav .active-element .strike {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: var(--active-element-opacity);
+      width: var(--active-element-width);
+      mix-blend-mode: multiply;
+    }
+
+    nav .active-element>svg {
+      display: block;
+      overflow: visible;
+      height: 5px;
+      filter: blur(0.5px) drop-shadow(2px 0px 8px rgba(104, 6, 6, 0.4)) drop-shadow(1px 0px 2px rgb(192, 19, 19)) drop-shadow(0px 0px 3px rgb(186, 1, 1)) drop-shadow(2px 0px 8px rgb(189, 10, 10)) drop-shadow(8px 0px 16px rgb(213, 47, 47));
+    }
+
+    nav .active-element .strike {
+      padding: 24px 0;
+      -webkit-mask-image: linear-gradient(to right,
+          transparent calc(0% + var(--active-element-mask-position)),
+          black calc(15% + var(--active-element-mask-position)),
+          black 80%,
+          transparent);
+      mask-image: linear-gradient(to right,
+          transparent calc(0% + var(--active-element-mask-position)),
+          black calc(15% + var(--active-element-mask-position)),
+          black 80%,
+          transparent);
+    }
+
+    nav .active-element .strike svg {
+      display: block;
+      overflow: visible;
+      height: 12px;
+      width: calc(var(--active-element-width) * 2);
+      transform: translate(var(--active-element-strike-x), 30%) scale(var(--active-element-scale-x), var(--active-element-scale-y));
+    }
+
+    nav .active-element .strike svg:last-child {
+      transform: translate(var(--active-element-strike-x), -30%) scale(-1);
+    }
+
+    nav .active-element .strike svg g path:nth-child(2) {
+      filter: blur(2px);
+    }
+
+    nav .active-element .strike svg g path:nth-child(3) {
+      filter: blur(4px);
+    }
+
+    /* $$$ */
+
+    .search-container {
+      width: 470px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Seeach */
+    .navbar .search {
+      display: inline-flex;
+      align-items: center;
+      color: #fff;
+      padding: 5px;
+      border-radius: 50px;
+      border: 2px solid #db2d2e;
+    }
+
+    .search:is(input, button) {
+      background: transparent;
+      color: inherit;
+      border: none;
+      outline: none;
+    }
+
+    .search-input {
+      width: 0;
+      transition: width 0.5s;
+      outline: none;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+    }
+
+    .searchbutton {
+      display: grid;
+      place-items: center;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      transition: color 0.25s;
+      background-color: transparent;
+      border: none;
+    }
+
+    .searchbutton:hover {
+      color: #db2d2e;
+    }
+
+    .search:focus-within input {
+      width: 200px;
+    }
+
+    ::placeholder {
+      font: inherit;
+      color: #e3e3e3;
+    }
+
+    .location img {
+      width: 40px;
+    }
+
+    .profile,
+    .location {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .profile img {
+      width: 45px;
+    }
+
+    .profile:hover {
+      content: "Login/Register";
+      position: relative;
+    }
+
+    .profile:hover::after {
+      content: "Login/Register";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #000;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      white-space: nowrap;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+
+    /* Search End */
+    /* Navbar End */
+
+    /* about contaner */
+
+    .about-container {
+      padding: 50px 20px;
+    }
+
+    .about-section h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: red;
+      padding-top: 50px;
+    }
+
+    .highlight {
+      font-family: 'Angelos';
+      color: #fff;
+      font-size: 2.2rem;
+    }
+
+    .btn-custom {
+      display: inline-block;
+      background-color: red;
+      color: #f3efef;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 30px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: darkred;
+      color: #fff;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+
+    .card {
+      /* background-color: #1e1e1e; */
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+      /* opacity: 0.6; */
+      box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h4 {
+      color: red;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about-section h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="about-section">
+    <div class="navbar">
+      <div class="logo">AutoEmpire</div>
+      <!-- $$$ -->
+      <nav>
+        <ul>
+          <li class="active">
+            <a href="Landing.html">Home</a>
+          </li>
+          <li>
+            <a href="inventory.html">Inventory</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="TopCars.html">Top Cars</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- $$$ -->
+
+      <div>
+        <div class="search-container">
+          <form action="" class="search">
+            <input type="text" placeholder="Search" class="search-input" />
+            <button type="button" class="searchbutton">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 15px">
+                <path fill="#db2d2e"
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+              </svg>
+            </button>
+          </form>
+          <button class="location">
+            <img src="./Assets/Images/location.png" alt="" />
+          </button>
+          <button class="profile">
+            <img src="./assets/images/profile.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="about-container">
+
+      <h2>About <span class="highlight">AutoEmpire</span></h2>
+      <p>
+        Welcome to <strong>AutoEmpire</strong>—your ultimate car dealership &
+        customization hub. We provide a seamless experience to explore, book
+        test drives, and customize your dream car effortlessly.
+      </p>
+
+      <div class="card-container">
+        <div class="card">
+          <h4>🚗 Browse & Compare</h4>
+          <p>Explore the latest models, colors, and accessories with ease.</p>
+        </div>
+        <div class="card">
+          <h4>📍 Smart Showroom Locator</h4>
+          <p>
+            Find the nearest car dealerships effortlessly based on your
+            location.
+          </p>
+        </div>
+        <div class="card">
+          <h4>🔧 Customization Hub</h4>
+          <p>Personalize your car with unique upgrades and features.</p>
+        </div>
+        <div class="card">
+          <h4>📅 Instant Test Drive Booking</h4>
+          <p>Reserve a test drive in just a few clicks.</p>
+        </div>
+      </div>
+
+      <a href="#" class="btn-custom">Explore Now</a>
+    </div>
+  </section>
+
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
+
+</body>
+
+</html>

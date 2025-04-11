@@ -1,0 +1,95 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color: #eee9e9;
+}
+body {
+  background-color: #000;
+}
+.checked {
+  color: orange;
+}
+.hero {
+  /* border: solid; */
+  height: 65vh;
+  background-image: url(asstes/images/USER\ REVIEWS.png);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  /* z-index: -5px; */
+}
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description p {
+  padding: 2rem 0;
+  width: 50%;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  /* border: solid; */
+  width: 23rem;
+  /* height: 500px; */
+  background-color: #151515;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.card .card-details {
+  background-color: transparent;
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container-1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-1 {
+  border: solid;
+  width: 28%;
+  height: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.user h6 {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.user-p p {
+  font-size: 20px;
+  text-align: center;
+}

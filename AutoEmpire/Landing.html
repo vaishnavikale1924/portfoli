@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoEmpire</title>
+  <link rel="stylesheet" href="landing.css" />
+  <link rel="stylesheet" href="cards2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <video autoplay muted loop class="video-content">
+      <source src="./Assets/video/bgVideo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="navbar">
+      <div class="logo">AutoEmpire</div>
+      <!-- $$$ -->
+      <nav>
+        <ul>
+          <li class="active">
+            <a href="Landing.html">Home</a>
+          </li>
+          <li>
+            <a href="inventory.html">Inventory</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="TopCars.html">Top Cars</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- $$$ -->
+
+      <div>
+        <div class="search-container">
+          <form action="" class="search">
+            <input type="text" placeholder="Search" class="search-input" />
+            <button type="button" class="searchbutton">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 15px">
+                <path fill="#db2d2e"
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+              </svg>
+            </button>
+          </form>
+          <button class="location">
+            <img src="Assets/Images/location.png" alt="" />
+          </button>
+          <button class="profile">
+            <img src="Assets/Images/profile.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Container -->
+    <div class="hero-text">
+      <h1>
+        Let's Find Your <br />
+        <span> Perfect Car </span>
+      </h1>
+      <p>Quality cars. Better prices. Test drives brought to you</p>
+    </div>
+    <!-- Hero Container -->
+
+    <!-- catlog -->
+    <div class="box">
+      <div class="container">
+        <div class="panel active" style="
+              background-image: url(/Assets/Images/bmw.png);
+              background-size: cover;
+            ">
+          <div class="icon">
+            <img src="./Assets/Images/BMWlogo.webp" alt="" style="width: 100%; height: 100%" />
+          </div>
+          <h3>BMW M5 CS</h3>
+        </div>
+        <div class="panel" style="
+              background-image: url(/Assets/Images/Ferrari.png);
+              background-size: cover;
+            ">
+          <div class="icon">
+            <img src="./Assets/Images/ferrarilogo.png" alt="" style="width: 100%; height: 80%" />
+          </div>
+          <h3>Ferrari F8</h3>
+        </div>
+        <div class="panel" style="
+              background-image: url(./Assets/Images/mercedes.png);
+              background-size: cover;
+            ">
+          <div class="icon">
+            <img src="./Assets/Images/mercedesLogo.webp" alt="" style="width: 100%; height: 100%" />
+          </div>
+          <h3>Mercedes GLA</h3>
+        </div>
+        <div class="panel" style="
+              background-image: url(/Assets/Images/gtr.png);
+              background-size: cover;
+            ">
+          <div class="icon">
+            <img src="./Assets/Images/nissanlogo.png" alt="" style="width: 90%; height: 85%" />
+          </div>
+          <h3>Nissan GTR R35</h3>
+        </div>
+        <div class="panel" style="
+              background-image: url(./Assets/Images/gt3rs.png);
+              background-size: cover;
+            ">
+          <div class="icon">
+            <img src="./Assets/Images/porsche.png" alt="" style="width: 70%; height: 90%; margin-left: 5px" />
+          </div>
+          <h3>Porsche 911 GT3 RS</h3>
+        </div>
+      </div>
+    </div>
+    <!-- catlog End -->
+  </header>
+  <!-- Header end -->
+
+  <!-- Filter -->
+  <div class="filter-container">
+    <div class="filter">
+      <h2 class="filter-title">Choose Your Desired Car</h2>
+      <div class="filter-box">
+        <div div class="filter-box__item">
+          <label for="brand">Brand</label>
+          <select name="brand" id="brand">
+            <option value="all">All</option>
+            <option value="bmw">BMW</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="nissan">Nissan</option>
+            <option value="porsche">Porsche</option>
+          </select>
+        </div>
+
+        <div class="filter-box__item">
+          <label for="price">Price</label>
+          <select name="price" id="price">
+            <option value="all">All</option>
+            <option value="1">₹ 20 Lakh</option>
+            <option value="5">₹ 50 Lakh</option>
+            <option value="10">₹ 1 Cr</option>
+            <option value="20">₹ 2 Cr</option>
+            <option value="50">₹ 3 Cr</option>
+            <option value="100">₹ 5 Cr</option>
+          </select>
+        </div>
+        <div class="filter-box__item">
+          <label for="body">Body Style</label>
+          <select name="body" id="body">
+            <option value="all">All</option>
+            <option value="suv">SUV</option>
+            <option value="sedan">Sedan</option>
+            <option value="sport">Sport</option>
+            <option value="utility">Utility</option>
+          </select>
+        </div>
+        <div class="filter-box__item">
+          <button>Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- filter End -->
+
+  <!-- collage -->
+  <section class="collage-container">
+    <div class="collage item-1"></div>
+    <div class="collage item-2"></div>
+    <div class="collage item-3"></div>
+    <div class="collage item-4"></div>
+    <div class="collage item-5"></div>
+    <div class="collage item-6"></div>
+  </section>
+  <!-- collage end -->
+
+  <!-- Cards -->
+  <div class="main-container">
+    <h2 class="title">For You</h2>
+    <div class="card-container">
+      <div class="card">
+        <!-- <img src="https://fadzrinmadu.github.io/hosted-assets/product-card-ui-design-using-html-and-css/img.png" alt="" class="card__img">  -->
+        <img src="Assets/Images/xuv700.png" alt="" class="card__img" />
+        <!-- <div class="card__content">  -->
+        <div class="card__data">
+          <h1 class="card__title">Mahindra XUV 700</h1>
+          <span class="card__preci">₹26.2 lakhs</span>
+          <p class="card__description">Body style: SUV Vehicle</p>
+          <a href="#" class="card__button">Book Now</a>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <div class="card">
+        <!-- <img src="https://fadzrinmadu.github.io/hosted-assets/product-card-ui-design-using-html-and-css/img.png" alt="" class="card__img">  -->
+        <img src="Assets/Images/m5.png" alt="" class="card__img" />
+        <!-- <div class="card__content">  -->
+        <div class="card__data">
+          <h1 class="card__title">BMW M5</h1>
+          <span class="card__preci">₹ 1.73 Crore</span>
+          <p class="card__description">Body style: Sport Sedan Vehicle</p>
+          <a href="#" class="card__button">Book Now</a>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <div class="card">
+        <!-- <img src="https://fadzrinmadu.github.io/hosted-assets/product-card-ui-design-using-html-and-css/img.png" alt="" class="card__img">  -->
+        <img src="Assets/Images/Supra mk5.png" alt="" class="card__img" />
+        <!-- <div class="card__content">  -->
+        <div class="card__data">
+          <h1 class="card__title">Toyota Supra MK5</h1>
+          <span class="card__preci">₹ 85 Lakh</span>
+          <p class="card__description">Body style: Sport Utility Vehicle</p>
+          <a href="#" class="card__button">Book Now</a>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <div class="card">
+        <!-- <img src="https://fadzrinmadu.github.io/hosted-assets/product-card-ui-design-using-html-and-css/img.png" alt="" class="card__img">  -->
+        <img src="Assets/Images/r35.png" alt="" class="card__img" />
+        <!-- <div class="card__content">  -->
+        <div class="card__data">
+          <h1 class="card__title">Nissan GTR r35</h1>
+          <span class="card__preci">₹ 2.12 Cr</span>
+          <p class="card__description">Body style: Sport Utility Vehicle</p>
+          <a href="#" class="card__button">Book Now</a>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- Cards End -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content" style="display: flex; justify-content: center;">
+        <div class="footer-content__logo">
+          <h1>AutoEmpire</h1>
+        </div>
+        <div class="footer-content__text">
+          <p>Quality cars. Better prices. Test drives brought to you</p>
+        </div>
+        <div class="footer-content__social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-content">
+        <div class="footer-content__title">
+          <h3>Quick Links</h3>
+        </div>
+        <div class="footer-content__links" style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="#">Home</a>
+          <a href="inventory.html">Inventory</a>
+          <a href="about.html">About</a>
+          <a href="TopCars.html">Top Cars</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="footer-content">
+        <div class="footer-content__title">
+          <h3>Support</h3>
+        </div>
+        <div class="footer-content__links" style="display: flex; flex-direction: column"></div>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-content__title">
+          <h3>Contact</h3>
+        </div>
+        <div class="footer-content__links" style="display: flex; flex-direction: column"></div>
+        <a href="#"><i class="fas fa-map-marker-alt" style="color: #db2d2e; font-size: 1.2rem; padding-right: 5px;"></i>
+          Stark Tower, 200
+          Park Avenue,<br> New
+          York, NY 10166</a>
+        <a href="#"><i class="fas fa-phone-square-alt"
+            style="color: #db2d2e; font-size: 1.2rem; padding-right: 5px;"></i> +91
+          0987654321</a>
+        <a href="#"><i class="fa fa-envelope" style="color: #db2d2e; font-size: 1.2rem; padding-right: 5px;"></i>
+          support@example.com</a>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2021 AutoEmpire. All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- script -->
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script src="landing.js"></script>
+</body>
+
+</html>
