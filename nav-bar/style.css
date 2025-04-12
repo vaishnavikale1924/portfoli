@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+/*body{
+   background-image: url(b2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}*/
+.LOGO{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(12, 12, 12);
+    color: aliceblue;
+    padding: 20px 20px;
+
+}
+ .nav{
+   
+    display: flex;
+    gap: 2rem;
+   
+   
+ }
+.nav a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 4s ease;
+
+    
+}
+.nav a:hover{
+    color: azure;
+}
+.nav-button button:hover{
+    background-color: rgb(207, 18, 18);
+    padding: 10px 20px;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+
+    
+
+}
+.box{
+    border: solid brown;
+    background-color: antiquewhite;
+    height: 190px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    float: inline-end;
+    margin-right: 250px;
+    margin-top: 100px;
+           
+            
+           
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+   
+}
+.card{
+width: 355px;
+background-color: #A9BA9D;
+margin: 10px;
+transition: transform 0.10s ease, background-color 0.10s ease ;
+margin-left: 350px;
+
+}
+.card img{
+    width: 100%;
+    max-height: 290px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.content a{
+    text-decoration: none;
+    display: inline;
+    background-color: #FFDB58;
+    color: beige;
+    margin-bottom: 10px;
+    padding: 1px 20px;
+    
+}
+.card:hover{
+    transform: translateY(-15px);
+    background-color: rgb(75, 75, 75);
+}
+.content{
+    padding: 10px;
+    color: cornsilk;
+    flex-flow: ;
+} 
+.img{
+    height: 100px;
+}
