@@ -5,6 +5,7 @@
 }
 .nav{
     display: flex;
+    flex-direction: row;
     padding: 30px;
     margin-left: 90px;
     font-size: 20px;
@@ -114,3 +115,51 @@ gap:20px
    padding: 20px;
   border-radius: 10px;
 } */
+
+
+@media (max-width: 600px) {
+    .nav {
+      flex-direction: column;
+      padding: 10px 20px;
+    }
+    .nav a {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+    }
+ @media (max-width:600px) {
+    .contenier-1{
+     width: 200px;
+     height: 420px;
+     margin-left: 100px;
+    
+    }
+ }
+ @media (max-width:600px) {
+    .profile{
+        width: 200px;
+        height: 200px;
+        
+    }
+ } 
+ @media (max-width: 600px) {
+   
+    .profile img {
+        height: 150px; /* Adjust height for smaller screens */
+        margin-left: 150px ; /* Center the image horizontally */
+        display: block; /* Make it block level for centering */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    /* For the cp image */
+    .cp img {
+        height: 250px; /* Adjust height for smaller screens */
+        margin: 0 auto; /* Center the image horizontally */
+        display: block; /* Make it block level for centering */
+    }
+}
+@media (max-width:600px) {
+    section{
+        margin-top: 250px;
+    }
+}
