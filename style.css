@@ -122,44 +122,38 @@ gap:20px
       flex-direction: column;
       padding: 10px 20px;
     }
+  
     .nav a {
-        margin: 10px 0;
-        font-size: 16px;
-      }
+      margin: 10px 0;
+      font-size: 16px;
     }
- @media (max-width:600px) {
-    .contenier-1{
-     width: 200px;
-     height: 420px;
-     margin-left: 100px;
-    
+  
+    .contenier-1 {
+      width: 200px;
+      height: 420px;
+      margin-left: 100px;
     }
- }
- @media (max-width:600px) {
-    .profile{
-        width: 200px;
-        height: 200px;
-        
+  
+    .profile {
+      width: 200px;
+      height: 200px;
     }
- } 
- @media (max-width: 600px) {
-   
+  
     .profile img {
-        height: 150px; /* Adjust height for smaller screens */
-        margin-left: 150px ; /* Center the image horizontally */
-        display: block; /* Make it block level for centering */
-        padding: 15px; /* Adjust padding for smaller screens */
+      height: 150px;
+      margin-left: 150px;
+      display: block;
+      padding: 15px;
     }
-
-    /* For the cp image */
+  
     .cp img {
-        height: 250px; /* Adjust height for smaller screens */
-        margin: 0 auto; /* Center the image horizontally */
-        display: block; /* Make it block level for centering */
+      height: 250px;
+      margin: 0 auto;
+      display: block;
     }
-}
-@media (max-width:600px) {
-    section{
-        margin-top: 250px;
+  
+    section {
+      margin-top: 250px;
     }
-}
+  }
+  
